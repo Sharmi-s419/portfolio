@@ -255,7 +255,7 @@ export default function App() {
                     playsInline
                     aria-label="About me video"
                   >
-                    <source src="/video.mp4" type="video/mp4" />
+                    <source src={`${import.meta.env.BASE_URL}video.mp4`} type="video/mp4" />
                     Your browser does not support the video element.
                   </video>
                 </div>

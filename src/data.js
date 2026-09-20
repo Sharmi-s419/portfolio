@@ -24,6 +24,8 @@ import {
   SiPostman,
 } from 'react-icons/si'
 
+const publicAsset = (fileName) => `${import.meta.env.BASE_URL}${fileName}`
+
 export const navigation = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact']
 
 export const skills = [
@@ -92,7 +94,7 @@ export const projects = [
     tech: ['React', 'Django', 'MongoDB', 'Blockchain'],
     liveDemo: '',
     github: 'https://github.com/Sharmi-s419/blockchain_exam_management',
-    image: '/block.png',
+    image: publicAsset('block.png'),
   },
   {
     name: 'Smart Assistive Alert and Monitoring System',
@@ -101,7 +103,7 @@ export const projects = [
     tech: ['Python', 'Tkinter', 'SQLite', 'OpenCV', 'PySerial'],
     liveDemo: '',
     github: '',
-    image: '/smart.png',
+    image: publicAsset('smart.png'),
   },
   {
     name: 'Subi Makeover',
@@ -110,7 +112,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'React'],
     liveDemo: 'https://subi-makeover.vercel.app',
     github: '',
-    image: '/subi makeover.png',
+    image: publicAsset('subi makeover.png'),
   },
   {
     name: 'Damaroosri Natyakshetra',
@@ -119,7 +121,7 @@ export const projects = [
     tech: ['HTML', 'CSS', 'JavaScript', 'React'],
     liveDemo: 'https://damaroosri-natyakshetra.vercel.app',
     github: '',
-    image: '/damoosri.png',
+    image: publicAsset('damoosri.png'),
   },
 ]
 
@@ -191,8 +193,8 @@ export const contactDetails = [
   { label: 'LinkedIn', value: 'linkedin.com/in/sharmis1901', icon: FaLinkedinIn, href: 'https://linkedin.com/in/sharmis1901' },
 ]
 
-export const profileImage = '/image.png'
-export const resumePath = '/resume.pdf'
+export const profileImage = publicAsset('image.png')
+export const resumePath = publicAsset('resume.pdf')
 
 export const socialLinks = [
   { label: 'GitHub', href: 'https://github.com/Sharmi-s419', icon: FaGithub },
